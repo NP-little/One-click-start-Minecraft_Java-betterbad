@@ -31,12 +31,14 @@
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
+::ä¸ºä»€ä¹ˆå‰é¢è¦åŠ è¿™äº›ç¥ç§˜ç¬¦å·
 
 @echo off
-start ¸üĞÂÈÕÖ¾.txt
-set qv=V1.5×îÖÕ°æ
-set hy=Ò»¼üÆô¶¯¡¶Minecraft£ºJava°æ¡·%qv%
-set zz=By ßÙÁ¨ßÙÁ¨@ZZMmake
+set qv=V1.6forkç‰ˆ
+set hy=ä¸€é”®å¯åŠ¨ã€ŠMinecraftï¼šJavaç‰ˆã€‹%qv%
+set zz=By å“”å“©å“”å“©@ZZMmake
+set zz=Fork by NP
+set zz= Hello Sekai!
 color 9
 title %hy%
 echo %hy%
@@ -50,11 +52,11 @@ goto q
 :Pn
 set /p pn=<pastname.txt
 echo ----------
-echo ÊÇ·ñÊ¹ÓÃÉÏÒ»´ÎµÄÓÃ»§Ãû£¿£¨%pn%£©
-echo 1.¿ÉÒÔ£¡
-echo 2.ÒìÒé£¡
+echo æ˜¯å¦ä½¿ç”¨ä¸Šä¸€æ¬¡çš„ç”¨æˆ·åï¼Ÿï¼ˆ%pn%ï¼‰
+echo 1.å¯ä»¥ï¼
+echo 2.å¼‚è®®ï¼
 echo ----------
-set /p AN="£¨ÇëÊäÈëĞòºÅ£¬×¢ÒâÊÇ°¢À­²®Êı×Ö£©ÇëÑ¡Ôñ£º"
+set /p AN="ï¼ˆè¯·è¾“å…¥åºå·ï¼Œæ³¨æ„æ˜¯é˜¿æ‹‰ä¼¯æ•°å­—ï¼‰è¯·é€‰æ‹©ï¼š"
 if %AN%==2 (cls&echo %hy%&echo %zz%&goto q)
 if %AN%==1 (set n=%pn%&cls&goto A)
 color 4
@@ -66,57 +68,57 @@ timeout /t 2 /nobreak >nul
 timeout /t 2 /nobreak >nul
 cls
 color 4
-echo ÎÒÃÇ¼ì²âµ½ÉÏÒ»´ÎµÄÔËĞĞÒâÍâ½áÊø£¬Õâ¿ÉÄÜÊÇÒòÎªÄúĞŞ¸ÄÁËÅäÖÃÎÄ¼şÒıÆğµÄ£¬ÊÇ·ñÇå³ıÅäÖÃÎÄ¼ş£¿
+echo æˆ‘ä»¬æ£€æµ‹åˆ°ä¸Šä¸€æ¬¡çš„è¿è¡Œæ„å¤–ç»“æŸï¼Œè¿™å¯èƒ½æ˜¯å› ä¸ºæ‚¨ä¿®æ”¹äº†é…ç½®æ–‡ä»¶å¼•èµ·çš„ï¼Œæ˜¯å¦æ¸…é™¤é…ç½®æ–‡ä»¶ï¼Ÿ
 echo ----------
-echo 1.ºÃµÄ
+echo 1.å¥½çš„
 echo ----------
-set /p NR="£¨ÇëÊäÈë°¢À­²®Êı×Ö£©ÇëÑ¡Ôñ£º"
+set /p NR="ï¼ˆè¯·è¾“å…¥é˜¿æ‹‰ä¼¯æ•°å­—ï¼‰è¯·é€‰æ‹©ï¼š"
 if %NR%==1 (del pastname.txt&cls&echo %hy%&echo %zz%&goto q)
 cls
-echo ¿´ÆğÀ´ÄúÊäÈëÁË´íÎóµÄĞÅÏ¢¡£
+echo çœ‹èµ·æ¥æ‚¨è¾“å…¥äº†é”™è¯¯çš„ä¿¡æ¯ã€‚
 timeout /t 2 /nobreak >nul
 cls&goto NR
 
 :q
 echo ----------
-echo £¨²»¿É°üº¬ÖĞÎÄ¼°·ûºÅ£¬¶øÇÒÒ»¶¨²»ÒªÊ¹ÓÃ123ÄÇÖÖ¾ø¶Ô»áÓëËûÈËÖØ¸´µÄÃû×Ö£¡£¡£¡£©
-set /p "n=ÇëÊäÈëÓÎÏ·ÄÚÓÃ»§Ãû£º"
+echo ï¼ˆä¸å¯åŒ…å«ä¸­æ–‡åŠç¬¦å·ï¼Œè€Œä¸”ä¸€å®šä¸è¦ä½¿ç”¨123é‚£ç§ç»å¯¹ä¼šä¸ä»–äººé‡å¤çš„åå­—ï¼ï¼ï¼ï¼‰
+set /p "n=è¯·è¾“å…¥æ¸¸æˆå†…ç”¨æˆ·åï¼š"
 echo %n%>pastname.txt
-if %n%==ZZMmake (cls&color 4&set n=NULL&echo %hy%&echo %zz%&echo ----------&echo ÄúµÄÓÃ»§Ãû¿´ÆğÀ´²»ÊÇ¸öºÃÃû×Ö¡£&goto q)
+if %n%==ZZMmake (cls&color 4&set n=NULL&echo %hy%&echo %zz%&echo ----------&echo æ‚¨çš„ç”¨æˆ·åçœ‹èµ·æ¥ä¸æ˜¯ä¸ªå¥½åå­—ã€‚&goto q)
 cls
 color 9
 
 :A
-if %n%==ZZMmake (cls&color 4&set n=NULL&echo %hy%&echo %zz%&echo ----------&echo ÄúµÄÓÃ»§Ãû¿´ÆğÀ´²»ÊÇ¸öºÃÃû×Ö¡£&goto q)
+if %n%==ZZMmake (cls&color 4&set n=NULL&echo %hy%&echo %zz%&echo ----------&echo æ‚¨çš„ç”¨æˆ·åçœ‹èµ·æ¥ä¸æ˜¯ä¸ªå¥½åå­—ã€‚&goto q)
 if %n%==trueZZMmake (set n=ZZMmake)
 del error.txt
 color 9
 echo %hy%
 echo %zz%
-title %hy%    ÓÃ»§Ãû:%n%
+title %hy%    ç”¨æˆ·å:%n%
 echo -----------
-echo ÇëÑ¡Ôñ°æ±¾
+echo è¯·é€‰æ‹©ç‰ˆæœ¬
 echo -----------
 echo 1.(1.12.2)
-echo 2.(15w14a)°®-2015ÓŞÈË½Ú°æ±¾
-echo 3.´ò¿ª1.12.2Ä£×éÎÄ¼ş¼Ğ
+echo 2.(15w14a)çˆ±-2015æ„šäººèŠ‚ç‰ˆæœ¬
+echo 3.æ‰“å¼€1.12.2æ¨¡ç»„æ–‡ä»¶å¤¹
 echo -----------
-set /p "v=£¨ÇëÊäÈëĞòºÅ£¬×¢ÒâÊÇ°¢À­²®Êı×Ö£©ÇëÑ¡Ôñ°æ±¾£º"
-if %v%==1 (color 2&cls&title %hy%     1.12.2ÓÎÏ·ÖĞ...    ÓÃ»§Ãû:%n%&goto B)
-if %v%==2 (color 2&cls&title %hy%     15w14aÓÎÏ·ÖĞ...    ÓÃ»§Ãû:%n%&goto C)
+set /p "v=ï¼ˆè¯·è¾“å…¥åºå·ï¼Œæ³¨æ„æ˜¯é˜¿æ‹‰ä¼¯æ•°å­—ï¼‰è¯·é€‰æ‹©ç‰ˆæœ¬ï¼š"
+if %v%==1 (color 2&cls&title %hy%     1.12.2æ¸¸æˆä¸­...    ç”¨æˆ·å:%n%&goto B)
+if %v%==2 (color 2&cls&title %hy%     15w14aæ¸¸æˆä¸­...    ç”¨æˆ·å:%n%&goto C)
 if %v%==3 (color 2&cls&start .minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5\mods&goto A)
 echo -----------
 color 4
-echo ÇëÊäÈëÕıÈ·µÄ°¢À­²®Êı×ÖĞòºÅ£¡
+echo è¯·è¾“å…¥æ­£ç¡®çš„é˜¿æ‹‰ä¼¯æ•°å­—åºå·ï¼
 timeout /t 2 /nobreak >nul
 cls
 goto A
 
 :B
 color 2
-echo ÕıÔÚÆô¶¯...
+echo æ­£åœ¨å¯åŠ¨...
 timeout /t 1 /nobreak >nul
-"Java/bin/java.exe" -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Djdk.lang.Process.allowAmbiguousCommands=true -Dfml.ignoreInvalidMinecraftCertificates=True -Dfml.ignorePatchDiscrepancies=True -Dlog4j2.formatMsgNoLookups=true -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmn512m -Xmx1024m "-Djava.library.path=.minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5\1.12.2-Forge_14.23.5.2847-OptiFine_G5-natives" -cp ".minecraft\libraries\com\mojang\patchy\1.3.9\patchy-1.3.9.jar;.minecraft\libraries\oshi-project\oshi-core\1.1\oshi-core-1.1.jar;.minecraft\libraries\net\java\dev\jna\jna\4.4.0\jna-4.4.0.jar;.minecraft\libraries\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;.minecraft\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;.minecraft\libraries\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;.minecraft\libraries\io\netty\netty-all\4.1.9.Final\netty-all-4.1.9.Final.jar;.minecraft\libraries\com\google\guava\guava\21.0\guava-21.0.jar;.minecraft\libraries\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;.minecraft\libraries\commons-io\commons-io\2.5\commons-io-2.5.jar;.minecraft\libraries\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;.minecraft\libraries\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;.minecraft\libraries\com\mojang\authlib\1.5.25\authlib-1.5.25.jar;.minecraft\libraries\com\mojang\realms\1.10.22\realms-1.10.22.jar;.minecraft\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;.minecraft\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;.minecraft\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;.minecraft\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;.minecraft\libraries\it\unimi\dsi\fastutil\7.1.0\fastutil-7.1.0.jar;.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.8.1\log4j-api-2.8.1.jar;.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.8.1\log4j-core-2.8.1.jar;.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar;.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4-nightly-20150209\lwjgl_util-2.9.4-nightly-20150209.jar;.minecraft\libraries\com\mojang\text2speech\1.10.3\text2speech-1.10.3.jar;.minecraft\libraries\net\minecraftforge\forge\1.12.2-14.23.5.2847\forge-1.12.2-14.23.5.2847.jar;.minecraft\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;.minecraft\libraries\org\ow2\asm\asm-all\5.2\asm-all-5.2.jar;.minecraft\libraries\org\jline\jline\3.5.1\jline-3.5.1.jar;.minecraft\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;.minecraft\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;.minecraft\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;.minecraft\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;.minecraft\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;.minecraft\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;.minecraft\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;.minecraft\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;.minecraft\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;.minecraft\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;.minecraft\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;.minecraft\libraries\java3d\vecmath\1.5.2\vecmath-1.5.2.jar;.minecraft\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;.minecraft\libraries\org\apache\maven\maven-artifact\3.5.3\maven-artifact-3.5.3.jar;.minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5\1.12.2-Forge_14.23.5.2847-OptiFine_G5.jar" net.minecraft.launchwrapper.Launch --username %n% --version 1.12.2-Forge_14.23.5.2847-OptiFine_G5 --gameDir ".minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5" --assetsDir ".minecraft\assets" --assetIndex 1.12 --uuid %n% --accessToken cab114514191980abcdefghijkAAA --userType msa --versionType ¾¹È»ÊÇ¡£ÉñÃØµÄ¡£Ò»¼üÆô¶¯¡£ --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge --height 480 --width 854
+"Java/bin/java.exe" -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Djdk.lang.Process.allowAmbiguousCommands=true -Dfml.ignoreInvalidMinecraftCertificates=True -Dfml.ignorePatchDiscrepancies=True -Dlog4j2.formatMsgNoLookups=true -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmn512m -Xmx1024m "-Djava.library.path=.minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5\1.12.2-Forge_14.23.5.2847-OptiFine_G5-natives" -cp ".minecraft\libraries\com\mojang\patchy\1.3.9\patchy-1.3.9.jar;.minecraft\libraries\oshi-project\oshi-core\1.1\oshi-core-1.1.jar;.minecraft\libraries\net\java\dev\jna\jna\4.4.0\jna-4.4.0.jar;.minecraft\libraries\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;.minecraft\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;.minecraft\libraries\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;.minecraft\libraries\io\netty\netty-all\4.1.9.Final\netty-all-4.1.9.Final.jar;.minecraft\libraries\com\google\guava\guava\21.0\guava-21.0.jar;.minecraft\libraries\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;.minecraft\libraries\commons-io\commons-io\2.5\commons-io-2.5.jar;.minecraft\libraries\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;.minecraft\libraries\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;.minecraft\libraries\com\mojang\authlib\1.5.25\authlib-1.5.25.jar;.minecraft\libraries\com\mojang\realms\1.10.22\realms-1.10.22.jar;.minecraft\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;.minecraft\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;.minecraft\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;.minecraft\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;.minecraft\libraries\it\unimi\dsi\fastutil\7.1.0\fastutil-7.1.0.jar;.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.8.1\log4j-api-2.8.1.jar;.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.8.1\log4j-core-2.8.1.jar;.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar;.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4-nightly-20150209\lwjgl_util-2.9.4-nightly-20150209.jar;.minecraft\libraries\com\mojang\text2speech\1.10.3\text2speech-1.10.3.jar;.minecraft\libraries\net\minecraftforge\forge\1.12.2-14.23.5.2847\forge-1.12.2-14.23.5.2847.jar;.minecraft\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;.minecraft\libraries\org\ow2\asm\asm-all\5.2\asm-all-5.2.jar;.minecraft\libraries\org\jline\jline\3.5.1\jline-3.5.1.jar;.minecraft\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;.minecraft\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;.minecraft\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;.minecraft\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;.minecraft\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;.minecraft\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;.minecraft\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;.minecraft\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;.minecraft\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;.minecraft\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;.minecraft\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;.minecraft\libraries\java3d\vecmath\1.5.2\vecmath-1.5.2.jar;.minecraft\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;.minecraft\libraries\org\apache\maven\maven-artifact\3.5.3\maven-artifact-3.5.3.jar;.minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5\1.12.2-Forge_14.23.5.2847-OptiFine_G5.jar" net.minecraft.launchwrapper.Launch --username %n% --version 1.12.2-Forge_14.23.5.2847-OptiFine_G5 --gameDir ".minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5" --assetsDir ".minecraft\assets" --assetIndex 1.12 --uuid %n% --accessToken cab114514191980abcdefghijkAAA --userType msa --versionType ç«Ÿç„¶æ˜¯ã€‚ç¥ç§˜çš„ã€‚ä¸€é”®å¯åŠ¨ã€‚ --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge --height 480 --width 854
 goto END
 
 :C
@@ -124,10 +126,10 @@ goto END
 goto END
 
 :END
-title %hy%     ÓÎÏ·ÒÑ½áÊø
+title %hy%     æ¸¸æˆå·²ç»“æŸ
 color 8
-echo ¸ĞĞ»ÄúµÄÊ¹ÓÃ¡£
-echo °´ÈÎÒâ¼üÍË³ö...
+echo æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨ã€‚
+echo æŒ‰ä»»æ„é”®é€€å‡º...
 pause >nul
 exit
-//ÖÆ×÷By ßÙÁ¨ßÙÁ¨@ZZMmake
+//åˆ¶ä½œBy å“”å“©å“”å“©@ZZMmake
