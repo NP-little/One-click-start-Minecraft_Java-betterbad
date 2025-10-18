@@ -35,9 +35,7 @@
 @echo off
 set qv=V1.6fork版
 set hy=一键启动《Minecraft：Java版》%qv%
-set zz=By 哔哩哔哩@ZZMmake
-set zz=Fork by NP
-set zz= Hello Sekai!
+set zz=By 哔哩哔哩@ZZMmake Fork by NP
 color 9
 title %hy%
 echo %hy%
