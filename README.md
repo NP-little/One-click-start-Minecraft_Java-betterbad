@@ -1,6 +1,9 @@
 [资源分享/信息课游戏]
+
 一键启动《Minecraft：Java版》V1.5最终版正式发布
+
 目前自带1.12.2和2015愚人节版本
+
 自带32位java环境，无需额外下载任何文件，抛弃繁琐的配置和卸载过程，启动方便，零基础电脑小白也可轻松使用
 
 自带mod列表(限1.12.2)：optfine,JEL物品管理器,连锁挖矿
@@ -12,6 +15,7 @@
 
 
 历史更新日志：
+
 V1.5
 1.[维护]修复了更一个严重的闪退bug
 2.[新增]加入了一个可能没用的启动器崩溃检测
@@ -38,4 +42,5 @@ V1.1
 2.[维护]移除了Himbrine
 
 下载链接：https://www.123684.com/s/E6wEjv-Iqhgd
+
 github：https://github.com/ZZMmake/One-click-start-Minecraft_Java
